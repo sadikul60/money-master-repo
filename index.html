@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <!-- tainwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+
+    <header>
+        <h1 class="text-5xl text-center mt-12 mb-8"><span class="text-blue-600 font-semibold">Money Master</span></h1>
+    </header>
+
+    <main>
+        <section class="grid grid-cols-1 justify-items-center mb-12">
+            <!-- Amount Blog -->
+            <div class="ml-12 pb-12">
+                <div class="text-right">
+                    <h3 class="text-2xl text-center font-semibold mt-6 mb-3">Income</h3>
+                    <div class=" text-2xl text-righ">
+                        Income : <input id="income-input" class="p-2 w-9/12 mx-auto" type="text" name="" placeholder="$">
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <h3 class="text-2xl text-center font-semibold mt-3 mb-3">Expenses</h3>
+                    <div class=" text-2xl text-righ">
+                        Food : <input id="food-input" class="p-2 w-9/12 mx-auto" type="text" name="" placeholder="$">
+                    </div>
+                    <div class=" text-2xl text-righ mt-3">
+                        Rent : <input id="rent-input" class="p-2 w-9/12 mx-auto" type="text" name="" placeholder="$">
+                    </div>
+                    <div class=" text-2xl text-righ mt-3">
+                        Clother : <input id="clother-input" class="p-2 w-9/12 mx-auto" type="text" name="" placeholder="$">
+                    </div>
+                </div>
+
+                <div class="text-center text-2xl mt-3">
+                    <button id="calculate-btn" class="bg-blue-500 hover:bg-blue-800 text-white px-6 py-2 rounded-lg">Calculate</button>
+                </div>
+
+                <div class=" text-2xl text-center mt-3">
+                    Total Expenses : $<span id="total-expenses">00</span>
+                </div>
+                <div class=" text-2xl text-center mt-3 mb-3">
+                    Balance : $<span id="total-balance">00</span>
+                </div>
+
+                <div class="flex">
+                    <div class="text-2xl">Save : <input id="save-input" class="p-2 text-2xl" type="text" name="" placeholder="$">
+                        <span class="ml-8 mr-8">%</span></div>
+                    <div class="">
+                        <button id="save-btn" class="bg-blue-400 hover:bg-blue-800 text-white text-2xl px-8 py-2 rounded-lg">Save</button>
+                    </div>
+                </div>
+
+                <div class=" text-2xl text-center mt-3">
+                    Saving Amount : $<span id="save-amount">00</span>
+                </div>
+                <div class=" text-2xl text-center mt-3">
+                   Remaining Balance : $<span id="remaining-balance">00</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="js/dom.js"></script>
+</body>
+</html>
