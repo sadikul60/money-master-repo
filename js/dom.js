@@ -11,7 +11,6 @@ function getInputFieldValueById (inputId){
 // Income inputField Function declar
 function getIncomeInputFieldValueById (inputIncomeId){
     const inputField = document.getElementById(inputIncomeId);
-    
     const inputFieldValueString = inputField.value;
     const inputFieldValue = parseInt(inputFieldValueString);
     return inputFieldValue;
